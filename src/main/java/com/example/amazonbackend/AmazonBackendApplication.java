@@ -1,0 +1,21 @@
+package com.example.amazonbackend;
+
+import org.springframework.boot.ConfigurableBootstrapContext;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+@SpringBootApplication
+public class AmazonBackendApplication {
+
+    public static void main(String[] args) {
+        ConfigurableApplicationContext context = SpringApplication.run(AmazonBackendApplication.class, args);
+
+        System.out.println("Welcome to boot");
+        Alien a = context.getBean(Alien.class);
+
+        a.show();
+
+    }
+
+}
