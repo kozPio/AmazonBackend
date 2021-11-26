@@ -11,10 +11,7 @@ public class AmazonBackendApplication {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(AmazonBackendApplication.class, args);
 
-        System.out.println("Welcome to boot");
-        Alien a = context.getBean(Alien.class);
 
-        a.show();
 
     }
 
